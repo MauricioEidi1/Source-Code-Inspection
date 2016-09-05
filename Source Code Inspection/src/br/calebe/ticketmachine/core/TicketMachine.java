@@ -12,7 +12,7 @@ public class TicketMachine {
 
     private int valor;
     private int saldo;
-    private int[] papelMoeda = {2, 5, 10, 20, 50, 100};
+    private int[] papelMoeda = {1,2, 5, 10, 20, 50, 100};
 
     public TicketMachine(int valor) {
         this.valor = valor;
@@ -41,10 +41,11 @@ public class TicketMachine {
     }
 
     public String imprimir() throws SaldoInsuficienteException {
+        String result;
         if (saldo < valor) {
             throw new SaldoInsuficienteException();
         }
-        String result = "*****************\n";
+        result = "*****************\n";
         result += "*** R$ " + saldo + ",00 ****\n";
         result += "*****************\n";
         return result;
