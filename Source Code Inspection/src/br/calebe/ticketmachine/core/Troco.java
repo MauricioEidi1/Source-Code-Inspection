@@ -43,7 +43,8 @@ class Troco {
         }
         papeisMoeda[1] = new PapelMoeda(2, count);
     }
-
+/*
+     
     public Iterator<PapelMoeda> getIterator() {
         return new TrocoIterator(this);
     }
@@ -83,4 +84,5 @@ class Troco {
             next();
         }
     }
+     */
 }
