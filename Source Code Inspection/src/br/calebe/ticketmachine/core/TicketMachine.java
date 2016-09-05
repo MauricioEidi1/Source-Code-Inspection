@@ -33,12 +33,12 @@ public class TicketMachine {
     }
 
     public int getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
-    public Iterator<Integer> getTroco() {
-        return null;
-    }
+//    public Iterator<Integer> getTroco() {
+//        return null;
+//    }
 
     public String imprimir() throws SaldoInsuficienteException {
         String result;
